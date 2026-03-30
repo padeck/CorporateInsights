@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="CorporateInsights.Api/CorporateInsights.Api.csproj" />
+  <Project Path="CorporateInsights.Core/CorporateInsights.Core.csproj" />
+  <Project Path="CorporateInsights.Infrastructure/CorporateInsights.Infrastructure.csproj" />
+  <Project Path="CorporateInsights.Worker/CorporateInsights.Worker.csproj" />
+</Solution>

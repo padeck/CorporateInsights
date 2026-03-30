@@ -1,0 +1,22 @@
+# .NET
+[Bb]in/
+[Oo]bj/
+*.swp
+*.user
+*.userosscache
+*.sln.docuser.tar.gz
+.VSCode/
+.vs/
+
+# Angular
+node_modules/
+dist/
+.angular/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database & KI
+*.db
