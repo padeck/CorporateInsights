@@ -1,5 +1,6 @@
 using CorporateInsights.Core.Entities;
 using Microsoft.EntityFrameworkCore;
+using MongoDB.EntityFrameworkCore.Extensions;
 
 namespace CorporateInsights.Infrastructure.Data;
 
@@ -11,9 +12,7 @@ public class AppDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<InsightArticle>()
-            .ToContainer("Articles")
-            .HasPartitionKey(e => e.Id)
-            .HasNoDiscriminator();
+        base.OnModelCreating(modelBuilder);
+        modelBuilder.Entity<InsightArticle>().ToCollection("Articles");
     }
 }
